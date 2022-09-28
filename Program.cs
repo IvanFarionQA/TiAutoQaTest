@@ -47,9 +47,6 @@ namespace ConsoleApp1
             //Triangle type
             Console.WriteLine();
 
-            //without delta(may be mistakes cuz of how double works)
-            //string equilateral = (Math.Abs(AB - BC) == 0 && Math.Abs(AB - AC) == 0 /*&& Math.Abs(BC - AC) == 0*/) ? "Triangle IS Equilateral" : "Triangle IS NOT Equilateral";
-            //string isosceles = (Math.Abs(AB - BC) == 0 || Math.Abs(AB - AC) == 0 || Math.Abs(BC - AC) == 0) ? "Triangle IS Isosceles" : "Triangle IS NOT Isosceles";
 
             //version with delta
             string equilateral = (Math.Abs(AB - BC) <= delta && Math.Abs(AB - AC) <= delta /*&& Math.Abs(BC - AC) == 0*/) ? "Triangle IS Equilateral" : "Triangle IS NOT Equilateral";
