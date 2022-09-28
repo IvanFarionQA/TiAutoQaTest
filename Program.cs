@@ -49,7 +49,7 @@ namespace ConsoleApp1
 
 
             //version with delta
-            string equilateral = (Math.Abs(AB - BC) <= delta && Math.Abs(AB - AC) <= delta /*&& Math.Abs(BC - AC) == 0*/) ? "Triangle IS Equilateral" : "Triangle IS NOT Equilateral";
+            string equilateral = (Math.Abs(AB - BC) <= delta && Math.Abs(AB - AC) <= delta && Math.Abs(BC - AC) == 0) ? "Triangle IS Equilateral" : "Triangle IS NOT Equilateral";
             string isosceles = (Math.Abs(AB - BC) <= delta || Math.Abs(AB - AC) <= delta || Math.Abs(BC - AC) <= delta) ? "Triangle IS Isosceles" : "Triangle IS NOT Isosceles";
             string right = (((Math.Pow(AB, 2) - Math.Pow(BC, 2) - Math.Pow(AC, 2)) <= delta) || ((Math.Pow(BC, 2) - Math.Pow(AC, 2) - Math.Pow(AB, 2)) <= delta) || ((Math.Pow(AC, 2) - Math.Pow(AB, 2) - Math.Pow(BC, 2)) <= delta)) ? "Triangle IS Right" : "Triangle IS NOT Right";
 
